@@ -1,0 +1,44 @@
+/* Accessibility Enhancements */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Touch friendly mood buttons */
+
+.mood-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    border-radius: 12px;
+    border: 2px solid #cbd5e1;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mood-btn:hover {
+    transform: scale(1.05);
+}
+
+.mood-selected {
+    border-color: #0d9488;
+    background-color: #ccfbf1;
+}
+
+/* Medication completed state */
+
+.taken {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* Better focus visibility */
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #0d9488;
+    outline-offset: 2px;
+}
