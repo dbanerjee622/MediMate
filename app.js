@@ -2,19 +2,15 @@ let medications = JSON.parse(localStorage.getItem("medications")) || [];
 let moodLogs = JSON.parse(localStorage.getItem("moodLogs")) || [];
 let selectedMood = null;
 
-// --- INITIALIZATION ---
 function init() {
-    // Greeting
     const hr = new Date().getHours();
     document.getElementById("smartGreeting").textContent = hr < 12 ? "Good Morning ☀️" : hr < 18 ? "Good Afternoon 🌤️" : "Good Evening 🌙";
     
-    // Theme Sync
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
         document.getElementById("themeIcon").textContent = "☀️";
     }
 
-    // Daily Reset
     const today = new Date().toLocaleDateString();
     if (localStorage.getItem('lastResetDate') !== today) {
         medications = medications.map(m => ({ ...m, taken: false }));
@@ -26,14 +22,12 @@ function init() {
 
 const saveData = () => localStorage.setItem("medications", JSON.stringify(medications));
 
-// --- THEME TOGGLE ---
 document.getElementById("themeToggle").onclick = () => {
     const isDark = document.documentElement.classList.toggle('dark');
     localStorage.theme = isDark ? 'dark' : 'light';
     document.getElementById("themeToggle").textContent = isDark ? "☀️" : "🌙";
 };
 
-// --- IMAGE PROCESSING ---
 async function processImage(file) {
     if (!file) return "";
     return new Promise((res) => {
@@ -43,7 +37,6 @@ async function processImage(file) {
     });
 }
 
-// --- RENDER LIST ---
 function renderSchedule() {
     const list = document.getElementById("scheduleList");
     list.innerHTML = medications.length === 0 ? `<p class="text-center text-slate-400 py-10 font-bold">No medications yet.</p>` : "";
@@ -82,7 +75,6 @@ window.deleteMed = (id) => {
     }
 };
 
-// --- FORM SUBMIT ---
 document.getElementById("medicationForm").onsubmit = async (e) => {
     e.preventDefault();
     const photoFile = document.getElementById("medPhoto").files[0];
@@ -101,7 +93,6 @@ document.getElementById("medicationForm").onsubmit = async (e) => {
     e.target.reset();
 };
 
-// --- MOOD & NOTIFICATIONS (Existing Logic) ---
 document.querySelectorAll(".mood-btn").forEach(btn => {
     btn.onclick = () => {
         document.querySelectorAll(".mood-btn").forEach(b => b.classList.remove("mood-selected"));
@@ -127,7 +118,6 @@ setInterval(() => {
     });
 }, 60000);
 
-// --- PDF REPORT ---
 document.getElementById("generatePdf").onclick = () => {
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
