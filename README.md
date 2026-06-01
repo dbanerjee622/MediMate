@@ -1,10 +1,24 @@
 # 🩺 MediMate
 
-MediMate is a privacy-focused medication management and wellness tracking app designed to simplify healthcare routines, especially for older adults and individuals managing multiple medications.
+<p align="center">
+  <img src="banner.png" alt="MediMate Banner" width="800">
+</p>
 
-Built as a Progressive Web App (PWA), MediMate provides an accessible, lightweight, and easy-to-use experience directly from any device.
+A privacy-focused medication management and wellness tracking app designed to simplify healthcare routines and improve medication adherence.
 
-## 🚀 Features
+Built as a Progressive Web App (PWA), MediMate provides an accessible, lightweight, and easy-to-use experience that works across desktop and mobile devices.
+
+---
+
+## 🚀 Live Demo
+
+🔗 **Website:** https://dbanerjee622.github.io/MediMate/
+
+🎥 **Demo Video:** https://youtu.be/hgWVuW4KA8A
+
+---
+
+## ✨ Features
 
 ### 💊 Smart Medication Tracking
 - Add medications with dosage and scheduled times
@@ -14,13 +28,13 @@ Built as a Progressive Web App (PWA), MediMate provides an accessible, lightweig
 
 ### 📸 Photo Proof
 - Upload medication bottle images
-- Visual confirmation for improved medication adherence
-- Stored locally on the device
+- Visual confirmation for medication adherence
+- Images stored locally on the device
 
 ### 😊 Wellness Tracking
-- Log moods and symptoms
-- Track daily health trends
-- Simple and intuitive interface
+- Log daily moods and symptoms
+- Monitor overall well-being
+- Simple and intuitive user interface
 
 ### 📄 Clinical Reports
 - Generate downloadable PDF reports
@@ -28,19 +42,19 @@ Built as a Progressive Web App (PWA), MediMate provides an accessible, lightweig
 - Powered by jsPDF
 
 ### 🌙 Accessibility First
-- High-contrast Light Mode and Dark Mode
-- Mobile-friendly responsive design
-- Large, readable interface for users of all ages
+- Light Mode and Dark Mode
+- High-contrast, readable interface
+- Responsive design for all screen sizes
 
 ### 📱 Progressive Web App (PWA)
 - Install directly to a phone's home screen
-- App-like experience without requiring an app store
+- App-like experience without an app store
 - Fast and lightweight performance
 
 ### 🔒 Privacy Focused
 - No accounts required
-- No external database
-- All information remains on the user's device using LocalStorage
+- No cloud storage
+- All user data remains on the device using LocalStorage
 
 ---
 
@@ -60,17 +74,34 @@ Built as a Progressive Web App (PWA), MediMate provides an accessible, lightweig
 
 ## 🎯 Inspiration
 
-Managing medications can be overwhelming, especially for elderly individuals or those taking multiple prescriptions. MediMate was created to reduce that complexity by providing a simple, accessible, and privacy-focused solution that helps users stay on track with their health.
+Managing medications can quickly become overwhelming, especially for older adults and individuals taking multiple prescriptions. MediMate was created to reduce that complexity by providing a simple, accessible, and privacy-focused solution that helps users stay on top of their health.
+
+---
+
+## ⚙️ How It Works
+
+1. Add medications with dosage and scheduled times.
+2. Upload medication images for quick visual reference.
+3. Mark medications as taken throughout the day.
+4. Track moods and symptoms using the wellness journal.
+5. Generate PDF reports for doctor visits.
+6. Install the app directly to your device as a PWA.
 
 ---
 
 ## 🔮 Future Improvements
 
-- Medication reminder notifications
-- Caregiver dashboard
+- Push notification reminders
 - Medication interaction warnings
-- Health data visualizations
-- Cloud backup and synchronization
+- Caregiver dashboard
+- Health analytics and trends
+- Secure cloud backup and synchronization
+
+---
+
+## 🏆 Built For
+
+**HackJPS 2026**
 
 ---
 
@@ -78,4 +109,10 @@ Managing medications can be overwhelming, especially for elderly individuals or 
 
 **Dhruv Banerjee**
 
-Built for **HackJPS 2026**.
+Sophomore high school student passionate about technology, engineering, healthcare innovation, and building solutions that make a real-world impact.
+
+---
+
+## 📜 License
+
+This project was created for educational and hackathon purposes.
