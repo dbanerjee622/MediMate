@@ -1,10 +1,6 @@
-/* Accessibility Enhancements */
-
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Touch friendly mood buttons */
 
 .mood-btn {
     width: 60px;
@@ -26,14 +22,10 @@ body {
     background-color: #ccfbf1;
 }
 
-/* Medication completed state */
-
 .taken {
     text-decoration: line-through;
     opacity: 0.5;
 }
-
-/* Better focus visibility */
 
 button:focus,
 input:focus,
